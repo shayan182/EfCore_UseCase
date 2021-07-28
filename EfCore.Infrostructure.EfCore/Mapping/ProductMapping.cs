@@ -1,4 +1,5 @@
-﻿using EfCore.Domain.productAgg;
+﻿
+using EfCore.Domain.ProductAgg;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 

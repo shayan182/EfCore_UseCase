@@ -11,5 +11,6 @@ namespace EfCore.Domain.ProductCategoryAgg
         void Create(ProductCategory productCategory);
         void SaveChanges();
         List<ProductCategoryViewModel> Search(string name);
+        List<ProductCategoryViewModel> GetAll();
     }
 }

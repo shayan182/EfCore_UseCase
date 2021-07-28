@@ -8,5 +8,6 @@ namespace EfCore.Application.Contract.ProductCategory
         void Edit(EditProductCategory command);
         EditProductCategory GetDetails(int id);
         List<ProductCategoryViewModel> Search(string name);
+        List<ProductCategoryViewModel> GetAll();
     }
 }

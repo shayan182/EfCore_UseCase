@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using EfCore.Domain.productAgg;
+using EfCore.Domain.ProductAgg;
 
 namespace EfCore.Domain.ProductCategoryAgg
 {

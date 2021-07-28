@@ -1,5 +1,5 @@
 ﻿  using System;
-using EfCore.Domain.productAgg;
+using EfCore.Domain.ProductAgg;
   using EfCore.Domain.ProductCategoryAgg;
   using EFCore.Infrastructure.EFCore.Mapping;
   using EfCore.Infrostructure.EfCore.Mapping;

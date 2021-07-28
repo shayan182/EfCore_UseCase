@@ -1,15 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using EfCore.Domain.productAgg;
+﻿using System.Collections.Generic;
+using EfCore.Application.Contract.Product;
 
 namespace EfCore.Domain.ProductAgg
 {
     public interface IProductRepository
     {
         Product Get(int id);
-        void Creat(Product product);
+        EditProduct GetDetails(int id);
+        void Create(Product product);
+        void SaveChanges();
+        bool Exists(string name,int categoryId);
+        List<ProductViewModel> Search(ProductSearchModel searchModel);
     }
 }

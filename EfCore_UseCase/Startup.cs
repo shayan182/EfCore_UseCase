@@ -1,6 +1,7 @@
 using EfCore.Domain.ProductAgg;
 using EfCore.Domain.ProductCategoryAgg;
 using EfCore.Application;
+using EfCore.Application.Contract.Product;
 using EfCore.Application.Contract.ProductCategory;
 using EFCore.Infrastructure.EFCore;
 using Microsoft.AspNetCore.Builder;
@@ -28,6 +29,9 @@ namespace EfCore_UseCase
             services.AddTransient<IProductCategoryApplication, ProductCategoryApplication>();
             services.AddTransient<IProductCategoryRepository, ProductCategoryRepository>();
 
+            services.AddTransient< IProductApplication, ProductApplication>();
+            services.AddTransient< IProductRepository, ProductRepository>();
+        
             services.AddDbContext<EfContext>(x =>
                     x.UseSqlServer(Configuration.GetConnectionString("EfCoreDb")));
             services.AddRazorPages();

@@ -42,6 +42,11 @@ namespace EfCore.Application
         {
             return _productCategoryRepository.Search(name);
         }
+
+        public List<ProductCategoryViewModel> GetAll()
+        {
+            return _productCategoryRepository.GetAll();
+        }
     }
 
 }
